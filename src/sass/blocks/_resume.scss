@@ -1,0 +1,97 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before-circle;
+        @include center-circle-X;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 143px;
+        justify-content: center;
+    }
+    &__education, &__experience {
+        padding-left: 43px;
+        position: relative;
+        &:before {
+            content: '';
+            width: 1px;
+            height: 97%;
+            background-color: #000;
+            position: absolute;
+            top: 3%;
+            left: 2%;
+            transform: translateX(-100%);
+        }
+    }
+    &__column-title {
+        position: relative;
+        &:before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: $main-color;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: -35px;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-bottom: 0;
+    }
+    &__item {
+        margin-top: 45px;
+        &-header {
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            column-gap: 19px;
+            position: relative;
+            &:before {
+                content: '';
+                width: 37px;
+                height: 1px;
+                background-color: #000;
+                position: absolute;
+                top: 51%;
+                left: -9%;
+                transform: translateX(-1%);
+            }
+        }
+        &-icon {
+            height: 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: relative;
+            @include before-circle;
+            @include center-circle;
+        }
+        &-location {
+            color: #000;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &-body {
+            color: #000;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 12px;
+        }
+    }
+}
