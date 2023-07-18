@@ -1,0 +1,137 @@
+@media (max-width: 1399px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        padding-bottom: 326px;
+    }
+    .bio {
+        padding-top: 100px;
+        &__wrapper {
+            grid-template-columns: 360px 1fr;
+            column-gap: 50px;
+        }
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+    .promo {
+        padding-bottom: 293px;
+    }
+    .bio {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: 320px 1fr;
+            grid-template-rows: 570px;
+            column-gap: 25px;
+        }
+        &__skills {
+            margin-top: 20px;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    .promo {
+        padding-bottom: 264px;
+        &__title {
+            width: 410px;
+        }
+    }
+    .bio {
+        padding-top: 60px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 570px auto;
+            row-gap: 46px;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 15px;
+        }
+    }
+}
+
+
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &_fz48 {
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
+    .promo {
+        padding-bottom: 247px;
+        &__title {
+            width: 290px;
+        }
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding: 140px 20px;
+        }
+    }
+    .bio {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-rows: 340px auto;
+        }
+        &__subtitle {
+            margin-top: 26px;
+        }
+        &__divider {
+            margin-top: 15px;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+}
